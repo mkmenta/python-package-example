@@ -3,7 +3,7 @@ This repository contains a basic python package example with the aim of showing 
 
 Install:
 ```
-pip install helloworld
+pip install helloworld-mkmenta
 ```
 Install locally:
 ```
