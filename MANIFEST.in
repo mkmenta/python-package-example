@@ -1,0 +1,3 @@
+include *.txt
+recursive-include tests *.py
+recursive-include .idea/runConfigurations *.xml
