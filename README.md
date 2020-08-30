@@ -13,16 +13,8 @@ pip install -e .
 ```
 If you are developing, you should run `pip install -e .` every time you change `setup.py` or the dependencies etc. to make sure that everything works.
 
-Usage example:
-```python
-from helloworld import say_hello
-
-# Generate "Hello world!"
-say_hello()
-
-# Generate "Hello mkmenta!"
-say_hello("mkmenta")
-```
+### Usage
+You will find an usage example [here](examples/say_hello_example.py).
 
 ### Developing
 To install the package along with the tools you need to develop it run the following (local installation with the `"dev"` extras:
