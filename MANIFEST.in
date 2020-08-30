@@ -1,3 +1,4 @@
 include *.txt
 recursive-include tests *.py
 recursive-include .idea/runConfigurations *.xml
+recursive-include examples *.py
