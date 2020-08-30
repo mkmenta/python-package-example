@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="helloworld-mkmenta",
-    version="0.0.1",
+    version="0.0.2",
     description="Say hello!",
     long_description=long_description,
     long_description_content_type="text/markdown",
