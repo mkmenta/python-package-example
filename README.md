@@ -11,18 +11,19 @@ git clone https://github.com/mkmenta/python-package-example.git
 cd python-package-example
 pip install -e .
 ```
-If you are developing, you should run `pip install -e .` every time you change `setup.py` or the dependencies etc. to make sure that everything works.
 
 ### Usage
 You will find an usage example [here](examples/say_hello_example.py).
 
-### Developing
+## Developing
 To install the package along with the tools you need to develop it run the following (local installation with the `"dev"` extras:
 ```
 git clone https://github.com/mkmenta/python-package-example.git
 cd python-package-example
 pip install -e ."[dev]"
 ```
+If you are developing, you should run `pip install -e .` every time you change `setup.py` or the dependencies etc. to make sure that everything works.
+
 ### A note about requirements
 The requirements needed to **run** the package should go in the `install_requires` argument of `setup()` in the `setup.py`.
 
@@ -52,6 +53,16 @@ python3 setup.py bdist_wheel sdist
 twine upload dist/*
 ```
 
+### Documentation
+The documentation is done using `sphinx`. I basically ran `sphinx-quickstart` in the `docs` folder and did some changes on the [conf.py](docs/source/conf.py).
+
+To build the docs run:
+```
+sphinx-apidoc -fo docs/ helloworld/ 
+sphinx-build -M html docs/ build/docs/
+```
+And you will find the docs in the `docs/build/html` folder.
+
 ### Other useful stuff
 - This repo is prepared for PyCharm and it has some run configurations (in `.idea/runConfigurations`).
 
@@ -60,3 +71,4 @@ twine upload dist/*
 - `.gitignore` file from [gitignore.io](gitignore.io)
 - License from [choosealicense.com](choosealicense.com)
 - PyPI classifiers from https://pypi.org/classifiers/
+- A Simple Tutorial on How to document your Python Project using Sphinx and Rinohtype ([post](https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b))
