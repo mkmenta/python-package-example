@@ -1,19 +1,19 @@
 from setuptools import setup
+from helloworld import __version__, __url__, __author__
 
 with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
     name="helloworld-mkmenta",
-    version="0.0.2",
+    version=__version__,
     description="Say hello!",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mkmenta/python-package-example",
-    author="Mikel Menta Garde",
+    url=__url__,
+    author=__author__,
     author_email="thisisnotmyemail@gmail.com",
-    py_modules=["helloworld"],
-    package_dir={"": "src"},
+    packages=["helloworld"],
     # You can take classifiers from https://pypi.org/classifiers/
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",

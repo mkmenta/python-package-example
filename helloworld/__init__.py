@@ -1,4 +1,11 @@
+"""The Hello World package."""
 from hashlib import blake2b
+
+__name__ = 'helloworld'
+__version__ = "0.0.2"
+__author__ = 'Mikel Menta Garde'
+__url__ = "https://github.com/mkmenta/python-package-example"
+__license__ = "MIT License"
 
 
 def say_hello(name=None):
