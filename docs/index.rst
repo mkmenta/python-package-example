@@ -7,8 +7,16 @@ Welcome to helloworld-mkmenta's documentation!
 ==============================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Tutorials:
+
+   sphinx
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Code contents:
+
+   helloworld
 
 
 
