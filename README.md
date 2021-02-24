@@ -63,6 +63,8 @@ sphinx-build -M html docs/ build/docs/
 ```
 And you will find the docs in the `docs/build/html` folder.
 
+Use [m2r2](https://github.com/miyakogi/m2r#sphinx-integration) package to include markdown files in the docs.
+
 ### Other useful stuff
 - This repo is prepared for PyCharm and it has some run configurations (in `.idea/runConfigurations`).
 
@@ -71,4 +73,10 @@ And you will find the docs in the `docs/build/html` folder.
 - `.gitignore` file from [gitignore.io](gitignore.io)
 - License from [choosealicense.com](choosealicense.com)
 - PyPI classifiers from https://pypi.org/classifiers/
-- A Simple Tutorial on How to document your Python Project using Sphinx and Rinohtype ([post](https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b))
+- Autodocumenting your Python code with Sphinx(
+[part1](https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-i-5/)
+[part2](https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-ii-6/))
+)
+- A Simple Tutorial on How to document your Python Project using Sphinx and Rinohtype (
+[post](https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b)
+)
