@@ -3,21 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to helloworld-mkmenta's documentation!
-==============================================
+.. include and convert (from Markdown to ReStructured Text) the README file content
+.. mdinclude:: ../README.md
+
+
+.. toctree (it is automatically included in the left bar)
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: Tutorials:
 
    sphinx
 
 .. toctree::
    :maxdepth: 1
-   :caption: Code contents:
+   :hidden:
+   :caption: API:
 
-   helloworld
-
+   modules
 
 
 Indices and tables
