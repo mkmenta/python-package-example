@@ -34,7 +34,7 @@ This is preferred to a `requirements.txt` file, because this is code and it can 
 The `requirements.txt` should be used to recreate enviroments with specific versions (e.g.`requests==2.22.0`), not to share software.
 
 ### Building and distribution
-Build without installi i.e. build wheel:
+Build without install i.e. build wheel:
 ```
 python3 setup.py bdist_wheel
 ```
