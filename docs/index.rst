@@ -7,10 +7,11 @@ Welcome to helloworld-mkmenta's documentation!
 ==============================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 1
+    :caption: API
 
-
+    api/helloworld
+    api/helloworld.utils
 
 Indices and tables
 ==================
