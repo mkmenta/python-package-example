@@ -32,11 +32,12 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    # Allow the ..todo:: directives
     'sphinx.ext.todo',
-    'sphinx.ext.viewcode',
     # Automatic docs generation based on docstrings:
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx.ext.viewcode',
     # Google style docstrings: https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings
     'sphinx.ext.napoleon'
 ]
