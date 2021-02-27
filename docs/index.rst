@@ -8,6 +8,12 @@ Welcome to helloworld-mkmenta's documentation!
 
 .. toctree::
     :maxdepth: 1
+    :caption: Tutorials
+
+    tutorials/documentation
+
+.. toctree::
+    :maxdepth: 1
     :caption: API
 
     api/helloworld
