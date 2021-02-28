@@ -53,6 +53,20 @@ In order to change the theme to the ReadTheDocs theme, add the line::
 
     html_theme = 'sphinx_rtd_theme'
 
+TOC tree and adding a page
+--------------------------
+To create a table of contents referencing the pages ``docs/api/module1.rst`` and ``docs/api/module1.rst`` use::
+
+    .. toctree::
+        :maxdepth: 1
+        :caption: API
+
+        api/module1
+        api/module2
+
+The ``toctree``-s you define in ``index.rst`` will fill up the left sidebar. But, if you don't want them to be shown in
+the ``ìndex``'s content, you can addthe option ``:hidden:``.
+
 Autodocumentation
 -----------------
 In order to create the automatic documentation using the ``docstrings`` from the code, you will need to add some extensions to sphinx. I have based my structure on ``pytorch`` and ``pytorch-lightning``'s docs. But, I hope that the notions written here allow to customize your docs in any way you want.
