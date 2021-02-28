@@ -33,6 +33,11 @@ This is preferred to a `requirements.txt` file, because this is code and it can 
 
 The `requirements.txt` should be used to recreate enviroments with specific versions (e.g.`requests==2.22.0`), not to share software.
 
+### Documentation
+This project has a documentation in *readthedocs.io* generated using `sphinx`: [documentation](https://python-package-example.readthedocs.io/en/latest/index.html).
+
+Find the tutorial on how it was created [here](https://python-package-example.readthedocs.io/en/latest/tutorials/documentation.html).
+
 ### Building and distribution
 Build without installi i.e. build wheel:
 ```
