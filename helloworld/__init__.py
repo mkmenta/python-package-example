@@ -2,7 +2,7 @@
 from hashlib import blake2b
 
 __name__ = 'helloworld'
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 __author__ = 'Mikel Menta Garde'
 __url__ = "https://github.com/mkmenta/python-package-example"
 __license__ = "MIT License"
