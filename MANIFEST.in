@@ -1,5 +1,9 @@
+recursive-include helloworld *.py
+recursive-include tests *.py
+recursive-include examples *.py
+
 include *.txt
 include tox.ini
-recursive-include tests *.py
 recursive-include .idea/runConfigurations *.xml
-recursive-include examples *.py
+
+recursive-exclude docs *
