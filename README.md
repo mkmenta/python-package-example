@@ -11,18 +11,19 @@ git clone https://github.com/mkmenta/python-package-example.git
 cd python-package-example
 pip install -e .
 ```
-If you are developing, you should run `pip install -e .` every time you change `setup.py` or the dependencies etc. to make sure that everything works.
 
 ### Usage
 You will find an usage example [here](examples/say_hello_example.py).
 
-### Developing
+## Developing
 To install the package along with the tools you need to develop it run the following (local installation with the `"dev"` extras:
 ```
 git clone https://github.com/mkmenta/python-package-example.git
 cd python-package-example
 pip install -e ."[dev]"
 ```
+If you are developing, you should run `pip install -e .` every time you change `setup.py` or the dependencies etc. to make sure that everything works.
+
 ### A note about requirements
 The requirements needed to **run** the package should go in the `install_requires` argument of `setup()` in the `setup.py`.
 
