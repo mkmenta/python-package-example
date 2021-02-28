@@ -195,11 +195,10 @@ Some extra possibilities you might find interesting to explore:
 
 References
 ----------
-- https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-i-5/
-- https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-ii-6/
-- https://docs.readthedocs.io/en/stable/index.html
-- https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-- https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
-- https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
-- https://github.com/PyTorchLightning/pytorch-lightning/tree/master/docs
-- https://github.com/pytorch/pytorch/tree/master/docs
+- Autodocumenting your Python code with Sphinx (Roman Miroshnychenko): `part1 <https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-i-5/>`_ `part2 <https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-ii-6/>`_
+- `Read The Docs <https://docs.readthedocs.io/en/stable/index.html>`_
+- Sphinx Docs: `restructuredtext <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
+- Sphinx Docs: `autosummary <https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html>`_
+- Sphinx Docs: `autodoc <https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html>`_
+- `PyTorch <https://github.com/pytorch/pytorch/tree/master/docs>`_
+- `PyTorch Lightning <https://github.com/PyTorchLightning/pytorch-lightning/tree/master/docs>`_
