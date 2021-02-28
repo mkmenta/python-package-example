@@ -9,6 +9,15 @@ __license__ = "MIT License"
 
 
 def say_hello(name=None):
+    """Say hello to the world or someone.
+
+    Args:
+        name (str): who you want to greet. If None it will greet the world.
+
+    Returns:
+        A string with the greeting.
+
+    """
     if name is None:
         return "Hello world!"
 
