@@ -140,6 +140,8 @@ If you would like to create them automatically, you can run (in the ``/docs`` fo
 This will generate the base API ``.rst`` files in ``/docs/api`` using the docstrings in the sources found in ``/helloworld``.
 You can safely run this command even if some of the ``.rst`` have been created, because they will not be overwritten.
 
+However, I personally prefer to write them manually using the following directives. Check this package's api ``.rst`` files to see an example.
+
 **Autodoc**: writing a directive like::
 
     .. automodule:: helloworld
