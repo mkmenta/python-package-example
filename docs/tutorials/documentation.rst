@@ -8,7 +8,7 @@ To create the base of the docs you need to create the ``docs`` folder and run ``
 
 **NOTE**: During the process you will be asked if you want to have separate ``/docs/source`` and ``/docs/build``
 folders. For my case I did **not** use separated folders. I wanted to have all the files directly in the ``/docs``
-folder and havethe builded html files in the ``/build`` folder **outside** of ``/docs``. (I'm considering as ``/`` the
+folder and have the builded html files in the ``/build`` folder **outside** of ``/docs``. (I'm considering as ``/`` the
 root of this project).
 
 Basic configuration
@@ -20,7 +20,7 @@ In order to build the docs in the ``build`` folder as I specified before, modify
 
     BUILDDIR      = ../build/docs
 
-**TIP**: In some cases, I have noted that the docs were not updated correctly so I also addeed an ``rm`` to the make first::
+**TIP**: In some cases, I have noticed that the docs were not updated correctly so I also added an ``rm`` to the make first::
 
     %: Makefile
     	if [ -d "$(BUILDDIR)" ]; then rm -R "$(BUILDDIR)"; fi
@@ -67,6 +67,14 @@ To create a table of contents referencing the pages ``docs/api/module1.rst`` and
 The ``toctree``-s you define in ``index.rst`` will fill up the left sidebar. But, if you don't want them to be shown in
 the ``ìndex``'s content, you can addthe option ``:hidden:``.
 
+**TIP**: if you want to automatically include all `.rst` files in a folder, do:
+
+    .. toctree::
+        :maxdepth: 1
+        :caption: API
+        :glob:
+
+        api/*
 Autodocumentation
 -----------------
 In order to create the automatic documentation using the ``docstrings`` from the code, you will need to add some extensions to sphinx. I have based my structure on ``pytorch`` and ``pytorch-lightning``'s docs. But, I hope that the notions written here allow to customize your docs in any way you want.
@@ -122,6 +130,15 @@ Now you will have to tell ``autodoc`` and ``autosummary`` where and how to work.
 with ``.rst`` pages for each of the main modules and packages following ``pytorch``'s documentation's structure idea.
 Feel free to explore this documentation's code or any other one you like. In this section you will find the basics of
 how they work.
+
+If you would like to create them automatically, you can run (in the ``/docs`` folder):
+
+.. code-block:: bash
+
+   sphinx-apidoc -o api/ ../helloworld
+
+This will generate the base API ``.rst`` files in ``/docs/api`` using the docstrings in the sources found in ``/helloworld``.
+You can safely run this command even if some of the ``.rst`` have been created, because they will not be overwritten.
 
 **Autodoc**: writing a directive like::
 
@@ -190,7 +207,6 @@ Some extra possibilities you might find interesting to explore:
  - You can modify the templates used for generating the ``autosummary`` based files. Find the originals in the
    `sphinx repo <https://github.com/sphinx-doc/sphinx/tree/3.x/sphinx/ext/autosummary/templates/autosummary>`_ and
    place your modificated ones in ``docs/_templates/autosummary/`` with the same name than originals.
- - You can automatically generate ``.rst`` files using ``sphinx-apidoc`` and ``sphinx-autogen`` (I think).
 
 
 References
