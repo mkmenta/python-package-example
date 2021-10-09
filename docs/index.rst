@@ -9,15 +9,16 @@ Welcome to helloworld-mkmenta's documentation!
 .. toctree::
     :maxdepth: 1
     :caption: Tutorials
+    :glob:
 
-    tutorials/documentation
+    tutorials/*
 
 .. toctree::
     :maxdepth: 1
     :caption: API
+    :glob:
 
-    api/helloworld
-    api/helloworld.utils
+    api/*
 
 Indices and tables
 ==================
