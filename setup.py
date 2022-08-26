@@ -24,7 +24,9 @@ setup(
     # TODO: it would be cool to show some install_requires usage
     extras_require={
         "dev": [
-            "pytest>=3.7",
+            "pytest",
+            "pydocstyle",
+            "pycodestyle"
         ]
     }
 )
