@@ -63,6 +63,8 @@ In order to check the code format and test it, this project runs a GitHub action
 
 You can check the execution of this action [here](https://github.com/mkmenta/python-package-example/actions/workflows/main-action.yml).
 
+This allows blocking any merge of a pull request if the code is not correcly formatted or tests are not passing. In order to do that you can go to `Settings -> Branches -> Add rule`
+
 ### Other useful stuff
 - This repo is prepared for PyCharm and it has some run configurations (in `.idea/runConfigurations`).
 
