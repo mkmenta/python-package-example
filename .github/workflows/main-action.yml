@@ -12,8 +12,8 @@ jobs:
         with:
           python-version: 3.9
       - name: Install package with dev option
-          run: |
-            python3 -m pip install -e ."[dev]"
+        run: |
+          python3 -m pip install -e ."[dev]"
       - name: Check code format
         run: |
           python3 -m pycodestyle helloworld examples tests
