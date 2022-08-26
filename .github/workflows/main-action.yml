@@ -1,0 +1,28 @@
+name: Main action
+
+on: [push]
+
+jobs:
+  Check-Format-and-Test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r dev-requirements.txt
+          if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt; fi
+      - name: Check code format
+        run: |
+          python3 -m pycodestyle helloworld examples tests
+      - name: Run tests
+        run: |
+          pytest tests
