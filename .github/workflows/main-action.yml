@@ -19,6 +19,9 @@ jobs:
       - name: Check code format
         run: |
           python3 -m pycodestyle helloworld examples tests
+      - name: Check docs format
+        run: |
+          python3 -m pydocstyle --convention=google helloworld examples tests
       - name: Run tests
         run: |
           python3 -m pytest tests
