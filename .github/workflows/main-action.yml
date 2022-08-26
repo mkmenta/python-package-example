@@ -22,3 +22,6 @@ jobs:
       - name: Run tests
         run: |
           python3 -m pytest tests
+      - name: Check installation
+        run: |
+          python3 -m pip install -e .
