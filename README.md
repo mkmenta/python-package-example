@@ -15,6 +15,11 @@ pip install -e .
 ### Usage
 You will find an usage example [here](examples/say_hello_example.py).
 
+## Documentation
+This project has a documentation in *readthedocs.io* generated using `sphinx`: [documentation](https://python-package-example.readthedocs.io/en/latest/index.html).
+
+Find the tutorial on how it was created [here](https://python-package-example.readthedocs.io/en/latest/tutorials/documentation.html).
+
 ## Developing
 To install the package along with the tools you need to develop it run the following (local installation with the `"dev"` extras:
 ```
@@ -32,11 +37,6 @@ The requirements needed to **develop** the package should go in the `extras_requ
 This is preferred to a `requirements.txt` file, because this is code and it can be understood directly during the installation of the package itself.
 
 The `requirements.txt` should be used to recreate enviroments with specific versions (e.g.`requests==2.22.0`), not to share software.
-
-### Documentation
-This project has a documentation in *readthedocs.io* generated using `sphinx`: [documentation](https://python-package-example.readthedocs.io/en/latest/index.html).
-
-Find the tutorial on how it was created [here](https://python-package-example.readthedocs.io/en/latest/tutorials/documentation.html).
 
 ### Building and distribution
 Build without installi i.e. build wheel:
@@ -57,6 +57,13 @@ For the source distribution, remember to:
 python3 setup.py bdist_wheel sdist
 twine upload dist/*
 ```
+
+### Code format checks and tests (GitHub Actions for continuous integration)
+In order to check the code format and test it, this project runs a GitHub action defined in [`.github/workflows/main-action.yml`](.github/workflows/main-action.yml).
+
+You can check the execution of this action [here](https://github.com/mkmenta/python-package-example/actions/workflows/main-action.yml).
+
+This allows blocking any merge of a pull request if the code is not correcly formatted or tests are not passing. In order to do that you can go to `Settings -> Branches -> Add rule`
 
 ### Other useful stuff
 - This repo is prepared for PyCharm and it has some run configurations (in `.idea/runConfigurations`).

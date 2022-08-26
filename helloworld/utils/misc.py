@@ -2,13 +2,16 @@
 
 
 def do_nothing():
-    """A function that does basically nothing."""
+    """Do basically nothing."""
     if False:
         print("HEY! I'm doing something!")
 
 
 class A:
+    """A class."""
+
     def __len__(self):
+        """Get length."""
         pass
 
 

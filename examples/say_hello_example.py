@@ -1,3 +1,4 @@
+"""Say hello function usage example."""
 from helloworld import say_hello
 
 # Generate "Hello world!"
