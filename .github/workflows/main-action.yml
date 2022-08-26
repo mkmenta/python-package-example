@@ -5,16 +5,12 @@ on: [push]
 jobs:
   Check-Format-and-Test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.9"]
-
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: 3.9
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
@@ -25,4 +21,4 @@ jobs:
           python3 -m pycodestyle helloworld examples tests
       - name: Run tests
         run: |
-          pytest tests
+          python3 -m pytest tests
