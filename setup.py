@@ -17,8 +17,7 @@ setup(
     # You can take classifiers from https://pypi.org/classifiers/
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
     ],
@@ -26,7 +25,6 @@ setup(
     extras_require={
         "dev": [
             "pytest>=3.7",
-            "tox"
         ]
     }
 )
