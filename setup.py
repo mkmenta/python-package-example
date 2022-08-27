@@ -21,7 +21,9 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent"
     ],
-    # TODO: it would be cool to show some install_requires usage
+    install_requires=[
+        "termcolor >= 1.1.0"  # we don't really need this to be >=1.1.0, is just to give an example
+    ],
     extras_require={
         "dev": [
             "pytest",

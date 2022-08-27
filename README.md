@@ -69,7 +69,7 @@ This allows blocking any merge of a pull request if the code is not correcly for
 - This repo is prepared for PyCharm and it has some run configurations (in `.idea/runConfigurations`).
 
 ## References
-- Mark Smith - Publish a (Perfect) Python Package on PyPI ([video](https://www.youtube.com/watch?v=GIF3LaRqgXo&list=WL&index=9&t=779s))
+- Mark Smith - Publish a (Perfect) Python Package on PyPI ([video](https://www.youtube.com/watch?v=GIF3LaRqgXo))
 - `.gitignore` file from [gitignore.io](gitignore.io)
 - License from [choosealicense.com](choosealicense.com)
 - PyPI classifiers from https://pypi.org/classifiers/
