@@ -1,17 +1,25 @@
+import os
+import sys
+from importlib import import_module
+
 from setuptools import setup
-from helloworld import __version__, __url__, __author__
+
+# If we do from helloworld import __version__ etc. we will get an error because requirements for imports in __init__.py
+# are not yet installed. This is an ugly way to do it but I haven't found a better way.
+sys.path.append(os.path.join(os.path.split(__file__)[0], "helloworld"))
+info = import_module("_info")
 
 with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
     name="helloworld-mkmenta",
-    version=__version__,
+    version=info.__version__,
     description="Say hello!",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url=__url__,
-    author=__author__,
+    url=info.__url__,
+    author=info.__author__,
     author_email="thisisnotmyemail@gmail.com",
     packages=["helloworld"],
     # You can take classifiers from https://pypi.org/classifiers/

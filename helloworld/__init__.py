@@ -3,11 +3,7 @@ from hashlib import blake2b
 
 from termcolor import colored
 
-__name__ = 'helloworld'
-__version__ = "0.0.3"
-__author__ = 'Mikel Menta Garde'
-__url__ = "https://github.com/mkmenta/python-package-example"
-__license__ = "MIT License"
+from ._info import *
 
 
 def say_hello(name=None):
