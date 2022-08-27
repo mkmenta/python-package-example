@@ -3,7 +3,6 @@ recursive-include tests *.py
 recursive-include examples *.py
 
 include *.txt
-include tox.ini
 recursive-include .idea/runConfigurations *.xml
 
 recursive-exclude docs *
