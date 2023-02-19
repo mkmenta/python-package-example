@@ -70,6 +70,6 @@ This allows blocking any merge of a pull request if the code is not correcly for
 
 ## References
 - Mark Smith - Publish a (Perfect) Python Package on PyPI ([video](https://www.youtube.com/watch?v=GIF3LaRqgXo))
-- `.gitignore` file from [gitignore.io](gitignore.io)
-- License from [choosealicense.com](choosealicense.com)
+- `.gitignore` file from https://gitignore.io/
+- License from https://choosealicense.com/
 - PyPI classifiers from https://pypi.org/classifiers/
