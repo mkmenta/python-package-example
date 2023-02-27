@@ -39,7 +39,7 @@ This is preferred to a `requirements.txt` file, because this is code and it can 
 The `requirements.txt` should be used to recreate enviroments with specific versions (e.g.`requests==2.22.0`), not to share software.
 
 ### Building and distribution
-Build without installi i.e. build wheel:
+Build without install i.e. build wheel:
 ```
 python3 setup.py bdist_wheel
 ```
@@ -73,3 +73,10 @@ This allows blocking any merge of a pull request if the code is not correcly for
 - `.gitignore` file from https://gitignore.io/
 - License from https://choosealicense.com/
 - PyPI classifiers from https://pypi.org/classifiers/
+- Autodocumenting your Python code with Sphinx(
+[part1](https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-i-5/)
+[part2](https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-ii-6/))
+)
+- A Simple Tutorial on How to document your Python Project using Sphinx and Rinohtype (
+[post](https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b)
+)
