@@ -6,8 +6,8 @@ Building the base docs
 ----------------------
 To create the base of the docs you need to create the ``docs`` folder and run ``sphinx-quickstart`` in it.
 
-**NOTE**: During the process you will be asked if you want to have separate ``/docs/source`` and ``/docs/build``
-folders. For my case I did **not** use separated folders. I wanted to have all the files directly in the ``/docs``
+**NOTE**: During the process, you will be asked if you want to have separate ``/docs/source`` and ``/docs/build``
+folders. In my case I did **not** use separate folders. I wanted to have all the files directly in the ``/docs``
 folder and have the builded html files in the ``/build`` folder **outside** of ``/docs``. (I'm considering as ``/`` the
 root of this project).
 
@@ -65,7 +65,7 @@ To create a table of contents referencing the pages ``docs/api/module1.rst`` and
         api/module2
 
 The ``toctree``-s you define in ``index.rst`` will fill up the left sidebar. But, if you don't want them to be shown in
-the ``ìndex``'s content, you can addthe option ``:hidden:``.
+the ``index``'s content, you can addthe option ``:hidden:``.
 
 **TIP**: if you want to automatically include all `.rst` files in a folder, do:
 
@@ -77,7 +77,7 @@ the ``ìndex``'s content, you can addthe option ``:hidden:``.
         api/*
 Autodocumentation
 -----------------
-In order to create the automatic documentation using the ``docstrings`` from the code, you will need to add some extensions to sphinx. I have based my structure on ``pytorch`` and ``pytorch-lightning``'s docs. But, I hope that the notions written here allow to customize your docs in any way you want.
+In order to create the automatic documentation using the ``docstrings`` from the code, you will need to add some extensions to sphinx. I have based my structure on ``pytorch`` and ``pytorch-lightning``'s docs. But, I hope that the notions written here allow customizing your docs in any way you want.
 
 Configuration
 `````````````
@@ -98,7 +98,7 @@ Brief explanation:
  - ``sphinx.ext.viewcode``: creates a link to a view of the code.
  - ``sphinx.ext.napoleon``: allows using `Google Style <https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings>`_ docstrings.
 
-**Autodoc configuration**: add this configurations to generate the automatic documentation as in this docs::
+**Autodoc configuration**: add these configurations to generate the automatic documentation as in this docs::
 
     autodoc_default_options = {
         'members': True,
@@ -112,7 +112,7 @@ Brief explanation:
 You can play around with the options.
 Find the rest of the options `here <https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#confval-autodoc_default_options>`_.
 
-**Autosummary configuration**: add the follwing lines to generate the ``autosummary`` files automatically and not overwrite them in each build (I
+**Autosummary configuration**: add the following lines to generate the ``autosummary`` files automatically and not overwrite them in each build (I
 personally want the last one disabled in case I add some extra explanations)::
 
     autosummary_generate = True
@@ -128,7 +128,7 @@ Creating the .rst files
 ```````````````````````
 Now you will have to tell ``autodoc`` and ``autosummary`` where and how to work. This exact documentation is organized
 with ``.rst`` pages for each of the main modules and packages following ``pytorch``'s documentation's structure idea.
-Feel free to explore this documentation's code or any other one you like. In this section you will find the basics of
+Feel free to explore this documentation's code or any other one you like. In this section, you will find the basics of
 how they work.
 
 If you would like to create them automatically, you can run (in the ``/docs`` folder):
