@@ -30,7 +30,7 @@ setup(
         "Operating System :: OS Independent"
     ],
     install_requires=[
-        "termcolor >= 1.1.0"  # we don't really need this to be >=1.1.0, is just to give an example
+        "termcolor < 2.0.0"
     ],
     extras_require={
         "dev": [
