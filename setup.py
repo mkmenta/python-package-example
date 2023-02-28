@@ -21,7 +21,10 @@ setup(
     url=info.__url__,
     author=info.__author__,
     author_email="thisisnotmyemail@gmail.com",
-    packages=["helloworld"],
+    packages=[
+        "helloworld",
+        "helloworld.utils"
+    ],
     # You can take classifiers from https://pypi.org/classifiers/
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",
