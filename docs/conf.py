@@ -39,7 +39,9 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.viewcode',
     # Google style docstrings: https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    # Allow including markdown files
+    'm2r2'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

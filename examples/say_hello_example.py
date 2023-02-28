@@ -1,10 +1,11 @@
 """Say hello function usage example."""
 from helloworld import say_hello
 
-# Generate "Hello world!"
-greeting = say_hello()
-print(greeting)
+if __name__ == '__main__':
+    # Generate "Hello world!"
+    greeting = say_hello()
+    print(greeting)
 
-# Generate "Hello mkmenta!"
-greeting = say_hello("mkmenta")
-print(greeting)
+    # Generate "Hello mkmenta!"
+    greeting = say_hello("mkmenta")
+    print(greeting)
