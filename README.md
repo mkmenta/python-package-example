@@ -1,5 +1,6 @@
 # Python Package Example
 ![Formatting and tests workflow](https://github.com/mkmenta/python-package-example/actions/workflows/main-action.yml/badge.svg)
+![Docs build](https://readthedocs.org/projects/python-package-example/badge/?version=latest)
 
 This repository contains a basic python package example with the aim of showing how a good python package should look like.
 
