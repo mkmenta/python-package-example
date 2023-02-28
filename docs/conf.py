@@ -13,11 +13,11 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('../helloworld'))
 
 # -- Project information -----------------------------------------------------
 
-from helloworld import __author__, __version__
+from _info import __author__, __version__
 
 project = 'helloworld-mkmenta'
 author = __author__
