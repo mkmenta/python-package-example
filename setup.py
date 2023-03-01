@@ -39,7 +39,11 @@ setup(
         "dev": [
             "pytest",
             "pydocstyle",
-            "pycodestyle"
+            "pycodestyle",
+            # docs:
+            "sphinx",
+            "m2r2",
+            "sphinx_rtd_theme"
         ]
     }
 )
