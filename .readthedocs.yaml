@@ -5,19 +5,11 @@
 # Required
 version: 2
 
-# Optionally declare the Python requirements required to build your docs
-python:
-   install:
-    # pip install ."[dev]"
-    - method: pip
-      path: .
-      extra_requirements:
-        - dev
-
 # Set the version of Python and other tools you might need
 build:
   os: ubuntu-22.04
   tools:
     python: "3.9"
   commands:
+    - python3 -m pip install ."[dev]"
     - BUILDDIR=../_readthedocs make -C docs html
