@@ -30,7 +30,11 @@ git clone https://github.com/mkmenta/python-package-example.git
 cd python-package-example
 pip install -e ."[dev]"
 ```
-If you are developing, you should run `pip install -e .` every time you change `setup.py` or the dependencies etc. to make sure that everything works.
+
+**Why install the package in editable mode (`-e` option)?** 
+Without the editable mode, the package is first built and then installed. This means that any change in the code would 
+require to re-install the package (i.e. run `pip install ."[dev]"`). With the editable mode instead of building and 
+installing the package the code is "linked", so all the updates in the code are automatically applied everywhere. 
 
 ### A note about requirements
 The requirements needed to **run** the package should go in the `install_requires` argument of `setup()` in the `setup.py`.

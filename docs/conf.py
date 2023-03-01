@@ -10,14 +10,16 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
+# It will require to have all requirements installed.
+
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../helloworld'))
+sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-from _info import __author__, __version__
+from helloworld import __author__, __version__
 
 project = 'helloworld-mkmenta'
 author = __author__
